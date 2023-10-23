@@ -7,7 +7,7 @@ def home(request):
     return render(request,'home.html',{'searchTerm':searchTerm})
 
 def about(request):
-    return HttpResponse("<h1>This is the about page</h1>")
+    return render(request,'about.html',{'name':'David'})
 
 def signup(request):
     email = request.GET.get('email')
